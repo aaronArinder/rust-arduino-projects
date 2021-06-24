@@ -1,0 +1,16 @@
+setting up development environment
+    - mac
+        - brew install osx-cross/avr/avr-gcc
+        - brew install avrdude
+
+    - rustup toolchain install nightly-2021-01-07
+        - https://github.com/Rahix/avr-hal/issues/124
+
+troubleshooting
+    - if problem building, LLVM:
+        - https://github.com/Rahix/avr-hal/issues/124
+        - also try adding toolchain file
+            - https://github.com/Rahix/avr-hal/issues/124#issuecomment-795676690
+            - this worked for me!
+
+binary in either target/avr-.../debug|release
